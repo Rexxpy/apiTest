@@ -1,6 +1,11 @@
 ## Instalasi
 
 ### 1. Clone Repository
-Clone repository ini ke mesin lokal kamu:
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/Rexxpy/apiTest.git
+
+
+### 2. Clone Repository
+```bash
+git clone https://github.com/Rexxpy/apiTest.git
+
