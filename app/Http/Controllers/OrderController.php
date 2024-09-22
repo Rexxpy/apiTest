@@ -68,7 +68,14 @@ class OrderController extends Controller
 
     public function show($id)
     { 
-        $orders = Order::with('products')->findOrFail($id);
+        $orders = Order::with('products')->find($id);
+
+        if (!$orders) {
+            return response()->json([
+                'message' => 'Order not found'
+            ], 404);
+        }
+
         return new OrderResource(true, 'Order Detail', $orders);
     }
 
